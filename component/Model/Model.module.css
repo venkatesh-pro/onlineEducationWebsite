@@ -1,0 +1,51 @@
+.container {
+  background: rgb(216, 185, 8);
+  color: black;
+  padding: 20px;
+  width: 50vw;
+  height: 400px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+}
+.container form {
+  width: 100%;
+  height: 100%;
+}
+.container2 form input {
+  padding: 10px;
+  margin-bottom: 4px;
+  width: 93%;
+}
+.container2 form textarea {
+  width: 93%;
+  padding: 10px;
+  align-items: center;
+  height: 30vh;
+  margin-bottom: 4px;
+}
+.container2 form label {
+  width: 93%;
+  display: inline-block;
+  background: #333323;
+  padding: 10px;
+}
+.container2 form button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  margin: 10px auto;
+  width: 230px;
+  align-items: center;
+}
+.container2 form button:active {
+  transform: scale(0.99);
+}
+.cancelP {
+  cursor: pointer;
+}

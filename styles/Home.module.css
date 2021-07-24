@@ -1,0 +1,58 @@
+.container {
+  min-height: 100vh;
+  background: #333232;
+  color: white;
+  overflow-x: hidden;
+}
+.titleContainer h2 {
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.courseContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.courseContainer > div {
+  margin: 10px;
+  background: #181414;
+  height: 360px;
+  border-radius: 10px;
+}
+.imageContainer {
+  width: 100%;
+  height: 50%;
+}
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+}
+.infoContainer {
+  margin-left: 20px;
+}
+.infoContainer h1 {
+  font-size: 19px;
+  text-transform: capitalize;
+}
+.infoContainer a {
+  color: white;
+  text-decoration: none;
+}
+.infoContainer a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 686px) {
+  .courseContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 425px) {
+  .courseContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

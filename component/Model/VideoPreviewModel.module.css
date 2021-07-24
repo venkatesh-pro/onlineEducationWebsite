@@ -1,0 +1,82 @@
+.videoContainer {
+  background: #d8b908;
+  color: black;
+  padding: 20px;
+  height: 100%;
+  width: 600px;
+}
+
+.videoContainer div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.videoContainer div span {
+  cursor: pointer;
+}
+.videoContainer h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.videoContainer video {
+  background: red;
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.videoPreviewTextImageContainer {
+  cursor: pointer;
+}
+
+.thumbNailImageContainer {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+.thumbNailImageContainer img {
+  width: 100%;
+  height: 100%;
+  /* margin: 10px; */
+}
+
+@media (max-width: 1024px) {
+  .videoContainer {
+    width: 500px;
+  }
+}
+@media (max-width: 868px) {
+  .videoContainer {
+    width: 440px;
+  }
+}
+@media (max-width: 698px) {
+  .videoContainer {
+    width: 400px;
+  }
+}
+@media (max-width: 548px) {
+  .videoContainer {
+    width: 350px;
+  }
+}
+@media (max-width: 478px) {
+  .videoContainer {
+    width: 320px;
+  }
+  .videoContainer h1 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 400px) {
+  .videoContainer {
+    width: 290px;
+  }
+}
+@media (max-width: 360px) {
+  .videoContainer {
+    width: 250px;
+  }
+}

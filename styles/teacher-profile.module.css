@@ -1,0 +1,113 @@
+.container {
+  width: 100vw;
+  background: #333232;
+  /* min-height: calc(100vh - 70px); */
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.teacherProfileText {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.imageContainer {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.courseContainer {
+  display: flex;
+  align-items: center;
+}
+.courseMainContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25), 0 5px 9px rgba(0, 0, 0, 0.7);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.courseInfoContainer {
+  margin-bottom: 3px;
+}
+.courseInfoContainer div h1 {
+  font-size: 22px;
+  margin: 0;
+}
+.courseInfoContainer div a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+.courseInfoContainer div a:hover {
+  text-decoration: underline;
+}
+.courseInfoContainer div p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 0px;
+}
+
+.labelContainer label {
+  background: gold;
+  color: black;
+}
+.empltyH1Container {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.empltyH1Container h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 70vh; */
+}
+.empltyH1Container h1 span {
+  display: inline-block;
+  margin-left: 6px;
+  margin-right: 6px;
+  color: gold;
+}
+.empltyH1Container h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.empltyH1Container h3 a {
+  text-decoration: none;
+  color: gold;
+}
+.empltyH1Container h3 a:hover {
+  text-decoration: underline;
+  color: rgb(212, 182, 12);
+}
+
+@media (max-width: 694px) {
+  .empltyH1Container h1 {
+    font-size: 20px;
+  }
+  .empltyH1Container h3 a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 352px) {
+  .empltyH1Container h1 {
+    font-size: 16px;
+  }
+  .empltyH1Container h3 a {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,114 @@
+.container {
+  width: 100vw;
+
+  min-height: 100vh;
+  background: #333232;
+  color: white;
+  overflow-x: hidden;
+}
+.container article {
+  margin-left: 30px;
+  margin-top: 90px;
+}
+
+.container label {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.container label:hover {
+  background: rgb(129, 111, 11);
+  color: white;
+}
+.imageContainer {
+  width: 100px;
+  height: 100px;
+}
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.topContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.topContainer div {
+  margin-left: 30px;
+}
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.topContainer h1 {
+  margin: 0;
+}
+.container1 label {
+  background: gold;
+  margin: 3px;
+  color: black;
+  padding: 2px;
+  border-radius: 4px;
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  justify-content: center;
+  margin: 0 auto;
+}
+.container2 button {
+  padding: 10px;
+  width: 50%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: gold;
+  font-size: 17px;
+  margin-top: 20px;
+}
+.container2 button:active {
+  transform: scale(0.99);
+}
+.modelComponentStyle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.isModelTrueStyleBg {
+  background: linear-gradient(rgba(0, 0, 0, 0.9) rgba(0, 0, 0, 1));
+  width: 100vw;
+  min-height: calc(100vh - 70px);
+  background: #333232;
+  color: white;
+  overflow-x: hidden;
+}
+
+.lessonDivContainer ul {
+  list-style: none;
+}
+.lessonDivContainer span {
+  margin-left: 10px;
+}
+.lessonDivContainer .lessonSpan1 {
+  background: rgb(216, 216, 216);
+  color: black;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+}
+.lessonDivContainer ul li {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,146 @@
+.container {
+  /* min-height: calc(100vh - 70px); */
+  overflow-x: hidden;
+  min-height: 100vh;
+
+  background: #333232;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.container .firstDivInContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+.topInfoContainer {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  text-transform: capitalize;
+}
+.topInfoContainer .descriptionP {
+  width: 70%;
+}
+
+.thumbnailContainer div {
+  width: 290px;
+  position: relative;
+  cursor: pointer;
+}
+.thumbnailContainer span {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 10px 30px black;
+}
+.thumbnailContainer div img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+}
+
+.lessonDivContainer {
+  background: #252525;
+}
+.lessonDivContainer ul {
+  margin-left: 50px;
+  list-style: none;
+}
+.lessonDivContainer h2 {
+  margin-left: 50px;
+}
+
+.lessonDivContainer .lessonSpan1 {
+  background: rgb(216, 216, 216);
+  color: black;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  margin-right: 20px;
+}
+.lessonDivContainer ul li {
+  display: flex;
+  align-items: center;
+}
+
+.modelComponentStyle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.enrolleButton {
+  width: 100%;
+  padding: 16px;
+  margin-top: 0;
+  border-radius: 3px;
+  border: none;
+}
+.enrolleButton span {
+  width: 30px;
+  height: 30px;
+}
+.enrolleButton span div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid black;
+  border-top-color: white;
+  animation: spin12 1s infinite ease-in-out;
+  margin: 0 auto;
+}
+
+@keyframes spin12 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.enrolleButton:active {
+  transform: scale(0.99);
+}
+@media (max-width: 488px) {
+  .thumbnailContainer {
+    margin-left: 8px;
+  }
+}
+@media (max-width: 425px) {
+  .topInfoContainer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 415px) {
+  .thumbnailContainer {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .enrolleButton {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 305px) {
+  .thumbnailContainer div {
+    width: 260px;
+  }
+}

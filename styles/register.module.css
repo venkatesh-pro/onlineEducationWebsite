@@ -1,0 +1,103 @@
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background: #333232;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.quotes {
+  margin: 0;
+}
+.quotes span {
+  color: #ffd700;
+}
+.quotesContainer {
+  margin: 20px 0;
+  margin-top: 90px;
+}
+.imageContainerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.imageUploadQuotes {
+  display: inline-block;
+  margin-left: 20px;
+  color: gold;
+}
+.imageLabel {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.imageContainer {
+  width: 50px;
+  height: 50px;
+  background: #333232;
+  border-radius: 50%;
+  border: 3px double white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input {
+  background: #333232;
+  border: 1px solid #333232;
+  color: white;
+  outline: none;
+  margin: 10px;
+  padding: 10px;
+}
+
+.form > .inputNameDiv,
+.inputEmailDiv,
+.inputPasswordDiv {
+  border-bottom: 1.5px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonDiv {
+  width: 100px;
+  height: 40px;
+  margin: 0 auto;
+}
+.buttonDiv button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin-top: 25px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.loginLinkContainer {
+  margin-top: 80px;
+}
+.loginLinkContainer a {
+  color: gold;
+  text-decoration: none;
+}
+.loginLinkContainer a:hover {
+  text-decoration: underline;
+}
+
+/* login style */
+
+.LoginQuotesContainer {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.Logincontainer {
+}

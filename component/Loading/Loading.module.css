@@ -1,0 +1,15 @@
+.loadingSpinner {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid black;
+  border-top-color: white;
+  animation: spin12 1s infinite ease-in-out;
+  margin: 0 auto;
+}
+
+@keyframes spin12 {
+  to {
+    transform: rotate(360deg);
+  }
+}

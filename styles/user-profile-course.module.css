@@ -1,0 +1,167 @@
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background: #333232;
+  color: white;
+  overflow-x: hidden;
+  display: flex;
+  /* justify-content: space-between; */
+}
+.innerContainer {
+  flex-shrink: 0;
+  flex-basis: content;
+  margin-top: 90px;
+}
+.innerContainer h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+  border: 1px solid grey;
+  padding: 10px;
+}
+.innerContainer ul {
+  list-style: none;
+  justify-content: center;
+}
+.innerContainer li {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+.innerContainer .innerContainerSpan1 {
+  display: inline-flex;
+  margin: 3px;
+  width: 50px;
+  height: 50px;
+  background: grey;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.innerContainer .innerContainerSpan2 {
+  margin-left: 3px;
+}
+.innerContainer .innerContainerSpan3 {
+  margin-left: 3px;
+}
+.innerContainer2 {
+  margin-right: 100px;
+  margin-left: 150px;
+  margin-top: 90px;
+}
+.innerContainer2TitleContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+.innerContainer2TitleContainer button {
+  padding: 10px;
+  background: black;
+  border: 1px solid white;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+.innerContainer2VideoContainer {
+  width: 800px;
+}
+.innerContainer2VideoContainer video {
+  width: 100%;
+}
+.clickTheLessonTextContainer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+@media (max-width: 1253px) {
+  .innerContainer2 {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 1173px) {
+  .innerContainer2 {
+    margin-left: 70px;
+  }
+}
+@media (max-width: 1139px) {
+  .innerContainer2VideoContainer {
+    width: 700px;
+  }
+}
+@media (max-width: 1042px) {
+  .innerContainer2VideoContainer {
+    width: 670px;
+  }
+}
+@media (max-width: 1004px) {
+  .innerContainer2VideoContainer {
+    width: 600px;
+  }
+}
+@media (max-width: 930px) {
+  .innerContainer2VideoContainer {
+    width: 540px;
+  }
+}
+
+@media (max-width: 868px) {
+  .innerContainer2VideoContainer {
+    width: 540px;
+  }
+  .innerContainer2 {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 847px) {
+  .innerContainer2VideoContainer {
+    width: 500px;
+  }
+  .innerContainer2 {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 771px) {
+  .innerContainer2VideoContainer {
+    width: 400px;
+  }
+  .innerContainer2 {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 669px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .innerContainer2VideoContainer {
+    width: 97%;
+    margin: 0 auto;
+  }
+  .innerContainer h3 {
+    width: 93%;
+    margin: 0 auto;
+  }
+
+  .innerContainer2 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .clickTheLessonTextContainer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+  }
+}
