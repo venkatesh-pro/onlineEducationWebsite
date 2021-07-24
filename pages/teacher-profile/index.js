@@ -4,6 +4,7 @@ import { toast } from 'react-toastify'
 import styles from '../../styles/teacher-profile.module.css'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { NEXT_BACKEND_URL } from '../../config'
 
 const easing = [0.6, -0.05, 0.01, 0.99]
 const fadeInUp = {
@@ -40,7 +41,7 @@ const teacherProfilePage = () => {
         },
       }
       const { data } = await axios.get(
-        'http://localhost:5000/api/current-teacher-course',
+        `${NEXT_BACKEND_URL}/current-teacher-course`,
         config
       )
 
