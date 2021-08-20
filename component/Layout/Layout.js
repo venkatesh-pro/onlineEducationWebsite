@@ -4,8 +4,6 @@ const Layout = ({ title, keyword, description, children }) => {
   return (
     <div>
       <Head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5892707750585096"
-     crossorigin="anonymous"></script>
         <title>{title}</title>
         <meta name='description' content={description} />
         <meta name='keywords' content={keyword} />
